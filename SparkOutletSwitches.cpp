@@ -68,12 +68,7 @@ void loop() {
     if(millis() - lastTime > UPDATE_INTERVAL) {
         // Set a new last time
         lastTime = millis();
-    
-        //if(startState == ON) {
-        //    if(millis() - startTime > FIFTEEN_MINUTES) {
-        //        startState = OFF;
-        //    }
-        //}        
+   
     }
 }
 
@@ -113,7 +108,7 @@ int outlet1(String args) {
 		//Tristate output by setting as input
 		pinMode(O1_PINS[0],INPUT); 
 		pinMode(O1_PINS[1],INPUT);
-        Outlet1State = OFF; // engine stopped
+        Outlet1State = OFF; //Outlet 1 stopped
         return 200; // This is checked in the web app controller for validation
     }
 }
@@ -135,7 +130,7 @@ int outlet2(String args) {
 		//Tristate output by setting back as input
 		pinMode(O2_PINS[0],INPUT); 
 		pinMode(O2_PINS[1],INPUT);
-		Outlet2State = ON; // Outlet 1 started
+		Outlet2State = ON; // Outlet 2 started
         return 200; // This is checked in the web app controller for validation
     }
     else {
@@ -154,7 +149,7 @@ int outlet2(String args) {
 		//Tristate output by setting as input
 		pinMode(O2_PINS[0],INPUT); 
 		pinMode(O2_PINS[1],INPUT);
-        Outlet2State = OFF; // engine stopped
+        Outlet2State = OFF; // Outlet 2 stopped
         return 200; // This is checked in the web app controller for validation
     }
 }
@@ -176,7 +171,7 @@ int outlet3(String args) {
 		//Tristate output by setting back as input
 		pinMode(O3_PINS[0],INPUT); 
 		pinMode(O3_PINS[1],INPUT);
-		Outlet3State = ON; // Outlet 1 started
+		Outlet3State = ON; // Outlet 3 started
         return 200; // This is checked in the web app controller for validation
     }
     else {
@@ -195,7 +190,7 @@ int outlet3(String args) {
 		//Tristate output by setting as input
 		pinMode(O3_PINS[0],INPUT); 
 		pinMode(O3_PINS[1],INPUT);
-        Outlet3State = OFF; // engine stopped
+        Outlet3State = OFF; // Outlet 3 stopped
         return 200; // This is checked in the web app controller for validation
     }
 }
@@ -218,7 +213,7 @@ int outlet4(String args) {
 		//Tristate output by setting back as input
 		pinMode(O4_PINS[0],INPUT); 
 		pinMode(O4_PINS[1],INPUT);
-		Outlet4State = ON; // Outlet 1 started
+		Outlet4State = ON; // Outlet 4 started
         return 200; // This is checked in the web app controller for validation
     }
     else {
@@ -237,7 +232,7 @@ int outlet4(String args) {
 		//Tristate output by setting as input
 		pinMode(O4_PINS[0],INPUT); 
 		pinMode(O4_PINS[1],INPUT);
-        Outlet4State = OFF; // engine stopped
+        Outlet4State = OFF; // Outlet 4 stopped
         return 200; // This is checked in the web app controller for validation
     }
 }
@@ -259,7 +254,7 @@ int outlet5(String args) {
 		//Tristate output by setting back as input
 		pinMode(O5_PINS[0],INPUT); 
 		pinMode(O5_PINS[1],INPUT);
-		Outlet5State = ON; // Outlet 1 started
+		Outlet5State = ON; // Outlet 5 started
         return 200; // This is checked in the web app controller for validation
     }
     else {
@@ -278,7 +273,7 @@ int outlet5(String args) {
 		//Tristate output by setting as input
 		pinMode(O5_PINS[0],INPUT); 
 		pinMode(O5_PINS[1],INPUT);
-        Outlet5State = OFF; // engine stopped
+        Outlet5State = OFF; // Outlet 5 stopped
         return 200; // This is checked in the web app controller for validation
     }
 }
